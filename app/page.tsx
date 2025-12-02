@@ -1,6 +1,7 @@
-import Hero from "../components/Hero";
-import TrustBar from "../components/TrustBar";
-import ServicesGrid from "../components/ServicesGrid";
+import Hero from "@/components/Hero";
+import TrustBar from "@/components/TrustBar";
+import ServicesGrid from "@/components/ServicesGrid";
+import ProcessTimeline from "@/components/ProcessTimeline";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <TrustBar />
       <ServicesGrid />
+      <ProcessTimeline />
       {/* Other sections will be added here */}
     </main>
   );
