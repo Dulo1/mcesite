@@ -8,7 +8,7 @@ const Hero = () => {
    {/* Background Image */}
    <div className="absolute inset-0 z-0">
     <Image
-     src="https://placehold.co/1920x1080"
+     src="https://placehold.co/1920x1080.png"
      alt="Cantiere EdilCostruzioni"
      fill
      className="object-cover"
