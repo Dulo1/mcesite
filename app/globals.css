@@ -1,27 +1,60 @@
 @import "tailwindcss";
 
-/* --- ANIMAZIONI --- */
-/* Manteniamo solo questo perché serve alla Hero */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
+/* DEFINIZIONE DEL TEMA GLOBALE */
+@theme {
+  /* --- Palette Colori Costruzioni (Namespace --color-*) --- */
+
+  /* Primario: Nero/Grigio Scuro (Sfondi, Testi scuri) */
+  --color-primary: oklch(0.20 0.02 260);
+  /* #222 - Dark Grey */
+  --color-primary-dark: oklch(0.12 0.01 260);
+  /* #111 - Almost Black */
+
+  /* Secondario: Gold/Beige (Accento, Bottoni, Highlight) */
+  /* Colore estratto visivamente: ~ #C5A572 */
+  --color-accent: oklch(0.75 0.12 75);
+  --color-accent-hover: oklch(0.70 0.12 75);
+  --color-accent-light: oklch(0.95 0.05 75);
+
+  /* Neutri */
+  --color-surface: light-dark(#ffffff, oklch(0.12 0.01 260));
+  --color-surface-muted: light-dark(oklch(0.97 0 0), oklch(0.20 0.01 260));
+
+  /* Testo */
+  --color-text-main: light-dark(oklch(0.20 0.02 260), oklch(0.95 0 0));
+  --color-text-muted: light-dark(oklch(0.45 0 0), oklch(0.70 0 0));
+
+  /* --- Tipografia --- */
+  --font-display: "Satoshi", "Inter", sans-serif;
+  /* Per titoli */
+  --font-body: "Inter", system-ui, sans-serif;
+  /* Per paragrafi */
+
+  /* --- Spaziatura e Layout --- */
+  --breakpoint-3xl: 1920px;
+  /* Supporto per schermi grandi (CAD/Progetti) */
+}
+
+/* Stili di base per il reset e la coerenza */
+@layer base {
+  body {
+    background-color: var(--color-surface);
+    color: var(--color-text-main);
+    font-family: var(--font-body);
+    /* Anti-aliasing per rendere i font nitidi su sfondi scuri */
+    -webkit-font-smoothing: antialiased;
   }
 
-  to {
-    opacity: 1;
-    transform: translateY(0);
+  /* Override del bordo di default di Tailwind v4 (che è currentColor) */
+  *,
+  ::after,
+  ::before {
+    border-color: var(--color-surface-muted);
   }
 }
 
-.animate-fade-in-up {
-  animation: fadeInUp 0.8s ease-out forwards;
-}
-
-.delay-200 {
-  animation-delay: 0.2s;
-}
-
-.delay-400 {
-  animation-delay: 0.4s;
+/* Utilità di debug (fondamentale per verificare se Tailwind carica) */
+@utility debug-grid {
+  outline: 2px dashed var(--color-accent);
+  background-color: color-mix(in oklch, var(--color-accent), transparent 90%);
 }

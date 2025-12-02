@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="it" suppressHydrationWarning={true}>
       <body
-        className={`${montserrat.variable} ${inter.variable} antialiased font-body bg-brand-concrete-light text-brand-black`}
+        className={`${montserrat.variable} ${inter.variable} antialiased font-body bg-surface text-text-main`}
       >
         <Navbar />
         {children}

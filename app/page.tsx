@@ -4,7 +4,7 @@ import ServicesGrid from "../components/ServicesGrid";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-brand-concrete-light">
+    <main className="min-h-screen bg-surface text-text-main">
       <Hero />
       <TrustBar />
       <ServicesGrid />
