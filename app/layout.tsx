@@ -16,7 +16,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "EdilCostruzioni",
+  title: "Montagna Costruzioni Edili",
   description: "Costruzioni e Ristrutturazioni Edili",
 };
 
