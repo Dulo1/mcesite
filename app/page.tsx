@@ -3,6 +3,8 @@ import TrustBar from "@/components/TrustBar";
 import ServicesGrid from "@/components/ServicesGrid";
 import ProcessTimeline from "@/components/ProcessTimeline";
 import PolyureaShowcase from "@/components/PolyureaShowcase";
+import AboutVision from "@/components/AboutVision";
+import ContactForm from "@/components/ContactForm";
 
 export default function Home() {
   return (
@@ -12,7 +14,8 @@ export default function Home() {
       <ServicesGrid />
       <ProcessTimeline />
       <PolyureaShowcase />
-      {/* Other sections will be added here */}
+      <AboutVision />
+      <ContactForm />
     </main>
   );
 }
