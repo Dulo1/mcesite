@@ -19,11 +19,11 @@ const AboutVision = () => {
             
             <div className="flex flex-col gap-5 mt-2">
               <p className="text-lg text-text-muted font-body leading-relaxed">
-                Siamo partiti dal mattone tradizionale, imparando il valore del sudore e del lavoro fatto a regola d'arte. Conosciamo i cantieri, i materiali e le sfide di ogni progetto edile.
+                Siamo partiti dal mattone tradizionale, imparando il valore del sudore e del lavoro fatto a regola d&apos;arte. Conosciamo i cantieri, i materiali e le sfide di ogni progetto edile.
               </p>
               
               <p className="text-lg text-text-main font-medium font-body leading-relaxed">
-                Ma non ci siamo fermati. Vedendo troppi tetti rovinati e aziende bloccate da infiltrazioni croniche, abbiamo deciso di evolverci. Abbiamo integrato soluzioni all'avanguardia come l'impermeabilizzazione in Poliurea a spruzzo. Il risultato? Interventi rapidi, senza demolizioni e garantiti nel tempo.
+                Ma non ci siamo fermati. Vedendo troppi tetti rovinati e aziende bloccate da infiltrazioni croniche, abbiamo deciso di evolverci. Abbiamo integrato soluzioni all&apos;avanguardia come l&apos;impermeabilizzazione in Poliurea a spruzzo. Il risultato? Interventi rapidi, senza demolizioni e garantiti nel tempo.
               </p>
             </div>
 

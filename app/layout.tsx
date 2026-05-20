@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Montserrat, Inter } from "next/font/google";
 import "./globals.css";
-import Navbar from "../components/Navbar";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -17,7 +18,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Montagna Costruzioni Edili",
-  description: "Costruzioni e Ristrutturazioni Edili",
+  description: "Costruzioni e Ristrutturazioni Edili con eccellenza e garanzia.",
 };
 
 export default function RootLayout({
@@ -28,10 +29,13 @@ export default function RootLayout({
   return (
     <html lang="it" suppressHydrationWarning={true}>
       <body
-        className={`${montserrat.variable} ${inter.variable} antialiased font-body bg-surface text-text-main`}
+        className={`${montserrat.variable} ${inter.variable} antialiased font-body bg-surface text-text-main flex flex-col min-h-screen`}
       >
         <Navbar />
-        {children}
+        <main className="flex-grow">
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   );

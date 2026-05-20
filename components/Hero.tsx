@@ -19,7 +19,7 @@ export default function Hero() {
 
      {/* Headline with Highlighted Text */}
      <h1 className="text-5xl font-bold tracking-tight text-white sm:text-6xl md:text-7xl lg:text-8xl font-display leading-[1.1]">
-      Dall'esperienza <br />
+      Dall&apos;esperienza <br />
       di ieri, <br />
       progettiamo e <br />
       costruiamo <br />
@@ -35,7 +35,7 @@ export default function Hero() {
 
      {/* Subheadline */}
      <p className="max-w-2xl text-lg text-gray-400 md:text-xl font-light leading-relaxed">
-      Uniamo la solidità delle costruzioni tradizionali con tecnologie d'avanguardia come la Poliurea a spruzzo.
+      Uniamo la solidità delle costruzioni tradizionali con tecnologie d&apos;avanguardia come la Poliurea a spruzzo.
      </p>
 
      {/* Buttons */}

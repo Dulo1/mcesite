@@ -1,9 +1,7 @@
 import Hero from "@/components/Hero";
 import TrustBar from "@/components/TrustBar";
 import ServicesGrid from "@/components/ServicesGrid";
-import ProcessTimeline from "@/components/ProcessTimeline";
-import PolyureaShowcase from "@/components/PolyureaShowcase";
-import AboutVision from "@/components/AboutVision";
+import PartnerLogos from "@/components/PartnerLogos";
 import ContactForm from "@/components/ContactForm";
 
 export default function Home() {
@@ -12,9 +10,7 @@ export default function Home() {
       <Hero />
       <TrustBar />
       <ServicesGrid />
-      <ProcessTimeline />
-      <PolyureaShowcase />
-      <AboutVision />
+      <PartnerLogos />
       <ContactForm />
     </main>
   );
